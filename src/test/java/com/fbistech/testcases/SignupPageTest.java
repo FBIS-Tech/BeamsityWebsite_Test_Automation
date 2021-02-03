@@ -6,15 +6,17 @@ import org.testng.annotations.Test;
 
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
-import com.fbistech.pages.LoginPage;
+import com.fbistech.pages.LogInPage;
+import com.fbistech.pages.School_OrganizationPage;
 import com.fbistech.pages.SignUpPage;
+import com.fbistech.util.JiraPolicy;
 
 import junit.framework.Assert;
 
 public class SignupPageTest extends TestBase {
 	HomePage homePage;
-	SignUpPage signupPage;
-	LoginPage loginPage;
+	SignUpPage signUpPage;
+	LogInPage logInPage;
 
 	
 	// this will initialize the properties of base class constructor there after call initialization() method
@@ -28,46 +30,58 @@ public class SignupPageTest extends TestBase {
 	{
 		initialization();
 		homePage = new HomePage();
-		signupPage = new SignUpPage();
-		loginPage = new LoginPage();
+		signUpPage = new SignUpPage();
+		logInPage = new LogInPage();
 	}
 
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority=1)
-	public void signUpPageTitleTest()
+	public void verifyUserSignUpPageTitle() throws Exception
 	{
-		String title = signupPage.validateSignUpPageTitle();
-		Assert.assertEquals(title, "Signup to Beamsity");  // No title page displayed from page source
+		logInPage = homePage.clickOnLogInLink();
+		Thread.sleep(2000);
+		signUpPage = logInPage.validateCreateFreeAcctLink();
+		Thread.sleep(2000);
+		String title = signUpPage.validateSignUpPageTitle();
+		System.out.println(title);
+		Assert.assertEquals(title, "React App");  // No title page displayed from page source
 	} 
 	
 	
-	@Test(priority=1)
-	public void verifySignUpLinkTest()
+	
+	@JiraPolicy(logTicketReady=true)
+	@Test(priority=1) 
+	public void verifyUserCanClickSignUpLink()
 	{
-		signupPage = homePage.clickOnSignUpLink();	
+		logInPage = homePage.clickOnLogInLink();
+		signUpPage = logInPage.validateCreateFreeAcctLink();
 	}
 
-	
+
 	@Test(priority=2)
-	public void verifySignUpTest()
+	public void verifyUserCanSignUpForm() throws Exception
 	{
-		signupPage = homePage.clickOnSignUpLink();
-		homePage = signupPage.Signup(prop.getProperty("firstName"), prop.getProperty("lastName"), 
+		homePage.clickOnLogInLink();
+		Thread.sleep(2000);
+		signUpPage = logInPage.validateCreateFreeAcctLink();
+		Thread.sleep(3000);
+		logInPage = signUpPage.Signup(prop.getProperty("firstName"), prop.getProperty("lastName"), 
 		prop.getProperty("phoneNo"), prop.getProperty("emailAddress"), prop.getProperty("password"));
 	}	
 	
-	
-	
-	
 //	@Test(priority=3)
-//	public void verifyLoginLinkTest()
+//	public void verifyUserCanSuccessfullySignUP()
 //	{
-//		signupPage = homePage.clickOnSignUpLink();
-//
-//		loginPage = loginPage.clickOnLoginLink();	
+//		signUpPage = homePage.clickOnSignUpLink();
+////		loginPage = loginPage.clickOnLoginLink();	
 //	
 //	}
-//	
+	
+	
+	
+	
+	
 	
 	
 	@AfterMethod

@@ -1,5 +1,6 @@
 package com.fbistech.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -7,10 +8,13 @@ import org.testng.annotations.Test;
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
 import com.fbistech.pages.SponsorsPage;
+import com.fbistech.pages.Sponsors_OrganizationPage;
+import com.fbistech.util.JiraPolicy;
 
 public class SponsorPageTest extends TestBase{
 	
-	HomePage homePage;
+	HomePage homePage; 
+	Sponsors_OrganizationPage sponsors_OrganizationPage;
 	SponsorsPage sponsorsPage;
 	
 	public SponsorPageTest()
@@ -25,57 +29,67 @@ public class SponsorPageTest extends TestBase{
 		initialization();
 		
 		homePage = new HomePage();
-		sponsorsPage = new SponsorsPage(); 
-		
+		sponsors_OrganizationPage = new Sponsors_OrganizationPage(); 
+		sponsorsPage = new SponsorsPage();
 	}
 
-	
-	
-	
-	
-	@Test(priority = 1) 
-	public void verifyUserCanClickSponsorLink() 
+	 
+	@JiraPolicy(logTicketReady=true)
+	@Test(priority=1)
+	public void verifySponsorPageTitleTest()
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
+		String sponsorsPageTitle = sponsors_OrganizationPage.validateSponsorPageTitle();
+		System.out.println(sponsorsPageTitle);
+		Assert.assertEquals(sponsorsPageTitle, "Beamsity");
 	}
 	
-	@Test(priority = 2) 
-	public void verifyUserCanClickOnSporsorFormBtn() throws Exception
+	
+	@JiraPolicy(logTicketReady=true)
+	@Test(priority = 2)   
+	public void verifyUserCanClickSponsorFormBtn() throws Exception 
 	{
-		 sponsorsPage = homePage.clickOnSponsorsLink();
-		 Thread.sleep(3000);
-		 sponsorsPage = sponsorsPage.clickOnSponsorForm();  
-	}
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
+		Thread.sleep(3000);
+		sponsorsPage = sponsorsPage.clickOnSponsorForm();
+		System.out.println("User was able to click on Sponsor Link: " + homePage);
+//		Assert.assertEquals(sponsorsPage, "page not found");
+	} 
 
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 3) 
 	public void verifyUserCanFillSponsorForm() throws Exception
 	{
-		 sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		 Thread.sleep(3000);
 		 sponsorsPage = sponsorsPage.clickOnSponsorForm();
 		 homePage = sponsorsPage.createNewSponsor(prop.getProperty("firstName"), prop.getProperty("lastName"),
 				 prop.getProperty("emailAddress"), prop.getProperty("phoneNo"));
 	}
 	
+	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 4) 
 	public void verifyCountryDropdownValue()
 	{	 
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		sponsorsPage = sponsorsPage.clickOnSponsorForm();
 		sponsorsPage = sponsorsPage.verifyCountryDropdownValue();
 	}
+
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 5) 
 	public void verifyCityDropdownValue()
 	{	 
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		sponsorsPage = sponsorsPage.clickOnSponsorForm();
 		sponsorsPage = sponsorsPage.verifyCityropdownValue();
 	}
 	
 	
-	
+	 
 	@AfterMethod
 	public void tearDown() throws Exception
 	{

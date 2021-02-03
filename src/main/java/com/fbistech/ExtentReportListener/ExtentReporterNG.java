@@ -17,17 +17,17 @@ import com.relevantcodes.extentreports.LogStatus;
 public class ExtentReporterNG implements IReporter {
 	
 	
-	public ExtentReporterNG extent;
+	public ExtentReporterNG extent; 
 	
 	
 	public ExtentReporterNG() 
 	{
-		super();
+		super();  
 	}
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,  String outputDirectory) 
-	{
+	{  
 		extent = new ExtentReporterNG();
-
+ 
 		for (ISuite suite : suites) 
 		{
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -75,7 +75,7 @@ public class ExtentReporterNG implements IReporter {
 				{
 					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
-
+ 
 				extent.endTest(test);
 			}
 		}

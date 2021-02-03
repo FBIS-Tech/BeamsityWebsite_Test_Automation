@@ -12,6 +12,9 @@ public class TutorPage extends TestBase{
 	
 //	PageFactory - Object Repository 
 
+	@FindBy(xpath = "//button[@id='Tutor']") 
+	WebElement tutorFormBtn;
+	
 	@FindBy(xpath = "//select[@id='interest']") 
 	WebElement selectInterest;
 	
@@ -47,11 +50,16 @@ public class TutorPage extends TestBase{
 	}
 	
 	
-//	public TutorPage clickOnTutorFormBtn()
-//	{
-//		tutorFormBtn.click();
-//		return new TutorPage();
-//	}
+	public String validateLoginPageTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	public TutorPage clickOnTutorFormBtn()
+	{
+		tutorFormBtn.click();
+		return new TutorPage();
+	}
 //	
 	
 	 

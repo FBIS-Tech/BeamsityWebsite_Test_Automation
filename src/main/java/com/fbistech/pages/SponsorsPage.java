@@ -8,11 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-
 import com.fbistech.base.TestBase;
 
-public class SponsorsPage extends TestBase{
-
+public class SponsorsPage extends TestBase {
+	
 	String country;
 	String city;
 
@@ -54,6 +53,12 @@ public class SponsorsPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Actions:
+	public String validateSignUpPageTitle()
+	{
+		return driver.getTitle();
+	}
+		
 	
 	public SponsorsPage clickOnSponsorForm()
 	{

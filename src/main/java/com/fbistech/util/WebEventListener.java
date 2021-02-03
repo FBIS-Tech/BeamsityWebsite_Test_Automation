@@ -19,7 +19,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	{
 		System.out.println("Before navigating to: '" + url + "'");	
 	}
-	
+	 
 	
 	public void afterNavigateTo(String url, WebDriver driver) 
 	{
@@ -43,7 +43,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	{
 		System.out.println("Trying to click on: "  + element.toString());
 	}	
-	
+	 
 	
 	public void afterClickOn(WebElement element, WebDriver driver) 
 	{

@@ -19,7 +19,7 @@ public class TestUtil extends TestBase {
 	public static long IMPLICITY_WAIT = 10;
 	
 
-	
+	 
 	/* watch 03-Page Object Model (POM) Design With Selenium - Part -3.mp4  */
 	public void switchToFrame()
 	{

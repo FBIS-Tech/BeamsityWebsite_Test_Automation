@@ -4,7 +4,7 @@
 	<test name-"Beamsity App Test Cases">
 		<classes>
 			
-			<class name- "com.fbistech.testcases.CoursesPageTest"></class>
+		<class name- "com.fbistech.testcases.CoursesPageTest"></class>
 			<class name- "com.fbistech.testcases.HomePageTest"></class>
 			<class name- "com.fbistech.testcases.LoginPageTest"></class>
 			<class name- "com.fbistech.testcases.School_OrganizationPageTest"></class>

@@ -13,6 +13,12 @@ import com.google.common.eventbus.Subscribe;
 public class HomePage extends TestBase{
 	WebElement userNameLabel;
 	
+//	Page Factory | Object Repository 
+	
+	@FindBy(xpath = "//a[@class='ant-dropdown-trigger ant-dropdown-link']")
+	@CacheLookup
+	WebElement coursesLink; 
+	
 	
 	@FindBy(xpath = "//a[contains(text(),'Subscribe')]")
 	@CacheLookup
@@ -21,24 +27,22 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath = "//a[contains(text(),'For Sponsors/Organization')]")
 	@CacheLookup
-	WebElement sponsorsLink;
+	WebElement sponsors_OrganizationLink;
 	
 	
 	@FindBy(xpath = "//a[contains(text(),'Company')]")
 	@CacheLookup
 	WebElement companyLink;
 	
-	@FindBy(xpath = "//a[contains(text(),'Sign Up')]")
+	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
 	@CacheLookup
-	WebElement signUpLink;
+	WebElement LogInLink;
 	
 	@FindBy(xpath = "//span[contains(text(),'Contact Us')]")
 	@CacheLookup
 	WebElement contactUsLink;
 	
 	
-	
-
 
 
 	
@@ -47,7 +51,7 @@ public class HomePage extends TestBase{
 	{
 		PageFactory.initElements(driver, this);
 	} 
-	 
+	  
 	
 	
 	public String verifyHomePageTitle() 
@@ -62,11 +66,26 @@ public class HomePage extends TestBase{
 		return userNameLabel.isDisplayed();
 	}
 	
+	
+	public CoursesPage clickOnCoursesLink()
+	{
+		coursesLink.click();
+		return new CoursesPage();
+	}
+	
 	public SubscribePage clickOnSubscribeLink()
 	{
 		subscribeLink.click();
 		return new SubscribePage();
 	}
+	
+	
+	public Sponsors_OrganizationPage clickOnSponsors_OrganizationLink()
+	{
+		sponsors_OrganizationLink.click();
+		return new Sponsors_OrganizationPage();
+	}
+	
 	
 	public CompanyPage clickOnCompanyLink()
 	{
@@ -75,10 +94,10 @@ public class HomePage extends TestBase{
 	}
 	
 	
-	public SignUpPage clickOnSignUpLink()
+	public LogInPage clickOnLogInLink()
 	{
-		signUpLink.click();
-		return new SignUpPage();
+		LogInLink.click();
+		return new LogInPage();
 	}
 	  
 	public ContactUsPage clickOnContactUsLink()
@@ -87,11 +106,7 @@ public class HomePage extends TestBase{
 		return new ContactUsPage();
 	}
 	
-	public SponsorsPage clickOnSponsorsLink()
-	{
-		sponsorsLink.click();
-		return new SponsorsPage();
-	}
+	
 	 
 
 	

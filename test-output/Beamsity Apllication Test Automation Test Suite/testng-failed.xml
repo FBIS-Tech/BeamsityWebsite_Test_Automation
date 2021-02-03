@@ -3,24 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Beamsity Apllication Test Automation Test Suite]">
   <listeners>
     <listener class-name="com.fbistech.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.fbistech.ExtentReportListener.TestJiraListener"/>
   </listeners>
   <test thread-count="5" name="Beamsity App Test Cases(failed)">
     <classes>
-      <class name="com.fbistech.testcases.LoginPageTest">
+      <class name="com.fbistech.testcases.HomePageTest">
         <methods>
-          <include name="verifyUserCanClickLoginLink"/>
-          <include name="verifyLoginPageTitleTest"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="verifyHomePageTitleTest"/>
         </methods>
-      </class> <!-- com.fbistech.testcases.LoginPageTest -->
-      <class name="com.fbistech.testcases.SignupPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="signUpPageTitleTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.fbistech.testcases.SignupPageTest -->
+      </class> <!-- com.fbistech.testcases.HomePageTest -->
     </classes>
   </test> <!-- Beamsity App Test Cases(failed) -->
 </suite> <!-- Failed suite [Beamsity Apllication Test Automation Test Suite] -->

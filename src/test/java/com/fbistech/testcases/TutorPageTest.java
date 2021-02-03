@@ -7,14 +7,15 @@ import org.testng.annotations.Test;
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
 import com.fbistech.pages.School_OrganizationPage;
-import com.fbistech.pages.SponsorsPage;
+import com.fbistech.pages.Sponsors_OrganizationPage;
 import com.fbistech.pages.TutorPage;
+import com.fbistech.util.JiraPolicy;
 
 public class TutorPageTest extends TestBase {
 	
 	
 	HomePage homePage;
-	SponsorsPage sponsorsPage;
+	Sponsors_OrganizationPage sponsors_OrganizationPage;
 	TutorPage tutorPage;
 	
 	public TutorPageTest()
@@ -29,26 +30,25 @@ public class TutorPageTest extends TestBase {
 		initialization();
 		
 		homePage = new HomePage();
-		sponsorsPage = new SponsorsPage();
+		sponsors_OrganizationPage = new Sponsors_OrganizationPage();
 		tutorPage = new TutorPage();
 		
 	}
 	
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 1) 
-	public void verifyUserCanClickSponsorLink() 
+	public void verifyUserCanClickTutorFormBtn() 
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 	}
 
 	
 	@Test(priority = 2) 
 	public void verifyUserCanFillTutorForm() throws Exception
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
-
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		Thread.sleep(3000);
-		
 		homePage = tutorPage.createNewTutor(prop.getProperty("firstName"), prop.getProperty("lastName"), 
 				prop.getProperty("emailAddress"), prop.getProperty("phoneNo"), prop.getProperty("uploadCourseFile"));
 		

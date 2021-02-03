@@ -19,7 +19,7 @@ public class CoursesPage extends TestBase {
 	
 	
 
-	//Initializing page objects:
+	//Initializing page objects: 
 		public CoursesPage()
 		{ 
 			PageFactory.initElements(driver, this);

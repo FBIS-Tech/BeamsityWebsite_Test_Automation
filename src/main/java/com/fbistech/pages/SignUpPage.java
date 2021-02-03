@@ -54,7 +54,7 @@ public class SignUpPage extends TestBase {
 	
  
 	
-	public HomePage Signup(String fN, String lN, String mobileNo, String email, String pwd)
+	public LogInPage Signup(String fN, String lN, String mobileNo, String email, String pwd)
 	{
 		firstName.sendKeys(fN);
 		lastName.sendKeys(lN);
@@ -63,14 +63,14 @@ public class SignUpPage extends TestBase {
 		password.sendKeys(pwd);
 		submitBtn.click();
 		
-		return new HomePage();  
+		return new LogInPage();  
 	}
 	
 	
-	public LoginPage clickOnLoginLink()
+	public LogInPage clickOnLoginLink()
 	{
 		loginLink.click();
-		return new LoginPage();
+		return new LogInPage();
 	}
 	
 	

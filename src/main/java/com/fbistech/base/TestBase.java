@@ -14,6 +14,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.fbistech.util.TestUtil;
 import com.fbistech.util.WebEventListener;
 
+
+
 public class TestBase {
 	
 	/*---Reference Variables----*/
@@ -24,7 +26,7 @@ public class TestBase {
 	
 	public TestBase()
 	{
-		try 
+		try  
 		{
 			prop = new Properties();
 //			FileInputStream ip = new FileInputStream("/Users/josephajayi/eclipse-workspace/BeamSity_Website/src/main/java/com/fbistech/config/config.properties");
@@ -33,7 +35,7 @@ public class TestBase {
 			
 		}
 		catch (FileNotFoundException e) 
-		{
+		{ 
 			e.printStackTrace();
 		}
 		catch (Exception e)
@@ -76,9 +78,9 @@ public class TestBase {
          * Registering the eventListener object to e_driver  
          * Assign e_driver to driver                                                                            
          */
-		
-		eventListener = new WebEventListener(); 
-		e_driver.register(eventListener); 
+//		
+//		eventListener = new WebEventListener(); 
+//		e_driver.register(eventListener); 
 		driver = e_driver;              
 		
 		

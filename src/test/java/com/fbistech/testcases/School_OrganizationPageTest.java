@@ -7,12 +7,13 @@ import org.testng.annotations.Test;
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
 import com.fbistech.pages.School_OrganizationPage;
-import com.fbistech.pages.SponsorsPage;
+import com.fbistech.pages.Sponsors_OrganizationPage;
+import com.fbistech.util.JiraPolicy;
 
 public class School_OrganizationPageTest extends TestBase
 {
 	HomePage homePage;
-	SponsorsPage sponsorsPage;
+	Sponsors_OrganizationPage sponsors_OrganizationPage;
 	School_OrganizationPage school_OrganizationPage;
 	
 	public School_OrganizationPageTest()
@@ -24,36 +25,38 @@ public class School_OrganizationPageTest extends TestBase
 	@BeforeMethod
 	public void setUp()
 	{
-		initialization();
+		initialization(); 
 		
 		homePage = new HomePage();
-		sponsorsPage = new SponsorsPage();
+		sponsors_OrganizationPage = new Sponsors_OrganizationPage();
 		school_OrganizationPage = new School_OrganizationPage();
 		
 	}
 	
-	
-	
+	 
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 1) 
 	public void verifyUserCanClickSponsorLink() 
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 	}
 	
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 2) 
 	public void verifyUserCanClickOnSchoolFormBtn() throws Exception
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		Thread.sleep(3000);
 		school_OrganizationPage = school_OrganizationPage.clickOnSponsor_OrganizationForm();	
 	}
 	
 	
+	@JiraPolicy(logTicketReady=true)
 	@Test(priority = 3) 
 	public void verifyUserCanFillSponsorForm() throws Exception
 	{
-		sponsorsPage = homePage.clickOnSponsorsLink();
+		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		Thread.sleep(3000);
 		school_OrganizationPage = school_OrganizationPage.clickOnSponsor_OrganizationForm();
 		homePage = school_OrganizationPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 

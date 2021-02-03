@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fbistech.testcases.SponsorPageTest">
+      <class name="com.fbistech.testcases.LoginPageTest">
         <methods>
-          <include name="verifyCountryDropdownValue"/>
-          <include name="verifyUserCanClickOnSporsorFormBtn"/>
-          <include name="verifyUserCanClickSponsorLink"/>
-          <include name="verifyUserCanFillSponsorForm"/>
+          <include name="verifyUserCanClickForgotPasswordLink"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyCityDropdownValue"/>
         </methods>
-      </class> <!-- com.fbistech.testcases.SponsorPageTest -->
+      </class> <!-- com.fbistech.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

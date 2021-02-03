@@ -51,7 +51,7 @@ public class CoursesPageTest extends TestBase{
 	
 	
 	
-	
+
 	
 	
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.fbistech.base.TestBase;
 
-public class LoginPage extends TestBase{
+public class LogInPage extends TestBase{
 	
 //	PageFactory - Object Repository 
 	
@@ -17,16 +17,28 @@ public class LoginPage extends TestBase{
 
 	@FindBy(xpath = "//input[@placeholder='Password']") 
 	@CacheLookup
-	WebElement password;
+	WebElement passWord;
 	
 	@FindBy(xpath = "//button[@type='button']") 
 	@CacheLookup
 	WebElement loginBtn;
 	
 	
-	@FindBy(xpath = "//a[contains(text(),'Forgot your password?')]") 
+	@FindBy(xpath = " //a[contains(text(),'Forgot your password?')]")
 	@CacheLookup
 	WebElement forgotPwd;
+	
+	
+	@FindBy(xpath = "//input [@placeholder='Enter email']") 
+	@CacheLookup
+	WebElement forgotPwdEmail;
+	
+	
+	@FindBy(xpath = "//button[contains(text(),'Continue')]") 
+	@CacheLookup
+	WebElement forgotPwdEmailSubmitBtn;
+	 
+	
 	
 	// Create Free Account from Sign In Page
 	@FindBy(xpath = "//a[contains(text(),'Create a free account')]") 
@@ -36,9 +48,9 @@ public class LoginPage extends TestBase{
 	
 
 	
-	// Initializing the Page Objects/object repository:
+	// Initializing the Page Objects | object repository:
 	// how to initialize the element with the help of page factory 
-	public LoginPage()
+	public LogInPage()
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -50,28 +62,43 @@ public class LoginPage extends TestBase{
 	}
 	
 	
-	public void validateForgotPassword()
-	{
-		forgotPwd.click(); 
-	}
 	
-	
-	public LoginPage validateCreateFreeAcct()
-	{
-		createFreeAcct.click();
-		return new LoginPage();
-	}
-	
-	public HomePage loginDetails(String emailMobileNo, String pwd)
+	public HomePage loginDetails(String phoneNo, String password)
 	{
 		
-		emailPhoneNo.sendKeys(emailMobileNo);		
-		password.sendKeys(pwd);		
+		emailPhoneNo.sendKeys(phoneNo);		
+		passWord.sendKeys(password);		
 		loginBtn.click(); 
-		
 		
 		//After login the method should return HomePage
 		return new HomePage();
+	}
+	
+	
+	public LogInPage validateForgotPasswordLink()
+	{
+		forgotPwd.click();
+		return new LogInPage(); 
+	}
+	
+
+	
+	public LogInPage forgetPasswordEmail(String passwordEmail) throws Exception
+	{
+		Thread.sleep(2000);
+		forgotPwdEmail.sendKeys(passwordEmail);
+		Thread.sleep(3000);
+		forgotPwdEmailSubmitBtn.click();
+		return new LogInPage();
+	}
+	
+	
+
+	
+	public SignUpPage validateCreateFreeAcctLink()
+	{
+		createFreeAcct.click();
+		return new SignUpPage();
 	}
 
 	
