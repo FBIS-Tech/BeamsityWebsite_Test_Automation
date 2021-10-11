@@ -5,7 +5,7 @@
     <classes>
       <class name="com.fbistech.testcases.LoginPageTest">
         <methods>
-          <include name="verifyUserCanClickForgotPasswordLink"/>
+          <include name="verifyUserLoginWithValideDetails"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

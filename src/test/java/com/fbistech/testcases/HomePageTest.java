@@ -11,8 +11,11 @@ import com.fbistech.pages.ContactUsPage;
 import com.fbistech.pages.CoursesPage;
 import com.fbistech.pages.HomePage;
 import com.fbistech.pages.LogInPage;
+import com.fbistech.pages.PartnerWithUsPage;
+import com.fbistech.pages.Schools_OrganizationsPage;
 import com.fbistech.pages.Sponsors_OrganizationPage;
 import com.fbistech.pages.SubscribePage;
+import com.fbistech.pages.TechOnBeamsityPage;
 import com.fbistech.util.JiraPolicy;
 import com.fbistech.util.TestUtil;
 
@@ -21,12 +24,17 @@ public class HomePageTest extends TestBase {
 	
 	
 	HomePage homePage;
+	Schools_OrganizationsPage schools_OrganizationsPage;
+	TechOnBeamsityPage techOnBeamsityPage;
+	ContactUsPage contactUsPage;
+	LogInPage logInPage;
+	PartnerWithUsPage partnerWithUsPage;
 	CoursesPage coursesPage;
 	SubscribePage subscribePage;
 	Sponsors_OrganizationPage sponsors_OrganizationPage;
 	CompanyPage companyPage;
-	LogInPage logInPage;
-	ContactUsPage contactUsPage; 
+	
+	 
 	TestUtil testUtil; // class object 
 	
 	// once the constructor is called it will automatically call the TestBase() method 
@@ -47,11 +55,15 @@ public class HomePageTest extends TestBase {
 	{  
 		initialization();
 		homePage = new HomePage();
+		schools_OrganizationsPage = new Schools_OrganizationsPage();
+		techOnBeamsityPage = new TechOnBeamsityPage();
+		contactUsPage = new ContactUsPage();
+		logInPage = new LogInPage();
+		partnerWithUsPage = new PartnerWithUsPage();
 		coursesPage = new CoursesPage();
 		subscribePage = new SubscribePage();
 		sponsors_OrganizationPage = new Sponsors_OrganizationPage();
 		companyPage = new CompanyPage();
-		logInPage = new LogInPage();
 		testUtil = new TestUtil(); // Initialize // testUtil = object reference 
 
 //		homePage = signInPage.loginDetails(prop.getProperty("username"), prop.getProperty("password"));
@@ -68,60 +80,80 @@ public class HomePageTest extends TestBase {
 	}
 	
 
-	@Test(priority = 2)
-	public void verifyUserCanClickOnCoursesLink()
-	{
-		coursesPage = homePage.clickOnCoursesLink();
-		
-	}
 	
-	
-	@Test(priority = 3)
-	public void verifyUserCanClickOnSubcribeLink()
-	{
-		subscribePage = homePage.clickOnSubscribeLink();
-	}
-	
-	
-	@Test(priority = 4)
-	public void verifyUserCanClickOnSponsors_OrganizationLinkLink()
-	{
-		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
-	}
-	
-	
-	@Test(priority = 5)
-	public void verifyUserCanClickOnCompanyLink()
-	{
-		companyPage = homePage.clickOnCompanyLink();
-	}
-	
-	
-	@Test(priority = 6)
-	public void verifyUserCanClickOnLogInLink()
-	{
-		logInPage = homePage.clickOnLogInLink();
-	}
-	
-	
-	@Test(priority = 7)
-	public void verifyUserCanClickOnContactUsLink()
-	{
-		contactUsPage = homePage.clickOnContactUsLink();
-	}
-	
-	
-	
-	
-//	@Test(priority = )
-//	public void verifyUsernameOnHomePageTest() 
+//	@Test(priority = 2)
+//	public void verifyUserCanClickOnSchools_OrganizationsLinkLink()
 //	{
-////		testU til.switchToFrame();
-//		Assert.assertTrue(homePage.verifyUserNameOnHomePage()); 
-//		 
+//		schools_OrganizationsPage = homePage.clickOnSchools_OrganizationsLink();
+//	}
+	
+//	
+//	@Test(priority = 3)
+//	public void verifyUserCanClickOnTeachOnBeamsitykLink()
+//	{
+//		techOnBeamsityPage = homePage.clickOnTechOnBeamsityLink();
+//	}
+//	
+//	@Test(priority = 4)
+//	public void verifyUserCanClickOnContactUsLink()
+//	{
+//		contactUsPage = homePage.clickOnContactUsLink();
 //	}
 //	
 //	
+//	@Test(priority = 5)
+//	public void verifyUserCanClickOnLogInLink()
+//	{
+//		logInPage = homePage.clickOnLogInLink();
+//	}
+//	
+//	
+//	@Test(priority = 6)
+//	public void verifyUserCanclickOnPartnerWithUsLink()
+//	{
+//		partnerWithUsPage = homePage.clickOnPartnerWithUsLink();
+//	}
+//	
+//	
+//	
+//	
+//	
+//	@Test(priority = 7)
+//	public void verifyUserCanClickOnCoursesLink()
+//	{
+//		coursesPage = homePage.clickOnCoursesLink();	
+//	}
+//	
+//	
+//	@Test(priority = 8)
+//	public void verifyUserCanClickOnSubcribeLink()
+//	{
+//		subscribePage = homePage.clickOnSubscribeLink();
+//	}
+//	
+//	
+//	@Test(priority = 9)
+//	public void verifyUserCanClickOnCompanyLink()
+//	{
+//		companyPage = homePage.clickOnCompanyLink();
+//	}
+//	
+//	
+//	@Test(priority = 10)
+//	public void verifyUserCanClickOnSponsors_OrganizationLinkLink()
+//	{
+//		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
+//	}
+	
+	
+//	@Test(priority = 9 )
+//	public void verifyUsernameOnHomePageTest() 
+//	{
+////		testU til.switchToFrame();
+//		Assert.assertTrue(homePage.verifyUserNameOnHomePage()); 	 
+//	}
+	
+	
 	
 	
 	

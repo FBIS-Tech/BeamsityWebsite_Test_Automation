@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
 import com.fbistech.pages.LogInPage;
-import com.fbistech.pages.School_OrganizationPage;
+import com.fbistech.pages.Schools_OrganizationsPage;
 import com.fbistech.pages.SignUpPage;
 import com.fbistech.util.JiraPolicy;
 

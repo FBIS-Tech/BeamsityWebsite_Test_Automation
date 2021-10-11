@@ -15,6 +15,44 @@ public class HomePage extends TestBase{
 	
 //	Page Factory | Object Repository 
 	
+	
+	@FindBy(xpath = "//div[@class='leftNavside']//a//*[local-name()='svg']") 
+	@CacheLookup
+	WebElement beamsityLogoLink;
+	
+	
+	@FindBy(xpath = "//a[contains(text(),'Schools/Organizations')]") // "//a[contains(text(),'For Sponsors/Organization')]"
+	@CacheLookup
+	WebElement schools_OrganizationsLink;
+	
+	
+	@FindBy(xpath = "//a[contains(text(),'Teach on BeamSity')]") 
+	@CacheLookup
+	WebElement techOnBeamsityLink;
+	
+	
+	
+	@FindBy(xpath = "//a[normalize-space()='Contact Us']")  // "//span[contains(text(),'Contact Us')]"
+	@CacheLookup
+	WebElement contactUsLink;
+	
+	
+	
+	@FindBy(xpath = "//a[normalize-space()='Login']") // "//a[contains(text(),'Sign In')]"
+	@CacheLookup
+	WebElement logInLink;
+	
+	
+	@FindBy(xpath = "//a[normalize-space()='Partner with us']")
+	@CacheLookup
+	WebElement partnerWithUsLink;
+	
+	
+	
+//------------------------------------------------------------------------	
+	
+	
+	
 	@FindBy(xpath = "//a[@class='ant-dropdown-trigger ant-dropdown-link']")
 	@CacheLookup
 	WebElement coursesLink; 
@@ -25,22 +63,13 @@ public class HomePage extends TestBase{
 	WebElement subscribeLink; 
 	
 	
-	@FindBy(xpath = "//a[contains(text(),'For Sponsors/Organization')]")
-	@CacheLookup
-	WebElement sponsors_OrganizationLink;
-	
 	
 	@FindBy(xpath = "//a[contains(text(),'Company')]")
 	@CacheLookup
 	WebElement companyLink;
 	
-	@FindBy(xpath = "//a[contains(text(),'Sign In')]")
-	@CacheLookup
-	WebElement LogInLink;
 	
-	@FindBy(xpath = "//span[contains(text(),'Contact Us')]")
-	@CacheLookup
-	WebElement contactUsLink;
+
 	
 	
 
@@ -66,6 +95,44 @@ public class HomePage extends TestBase{
 		return userNameLabel.isDisplayed();
 	}
 	
+		
+
+	public Schools_OrganizationsPage clickOnSchools_OrganizationsLink()
+	{
+		schools_OrganizationsLink.click();
+		return new Schools_OrganizationsPage();
+	}
+	
+	
+	public TechOnBeamsityPage clickOnTechOnBeamsityLink()
+	{
+		techOnBeamsityLink.click();
+		return new TechOnBeamsityPage();
+	}
+	
+	
+	public ContactUsPage clickOnContactUsLink()
+	{
+		contactUsLink.click();
+		return new ContactUsPage();
+	}
+	
+	
+	public LogInPage clickOnLogInLink()
+	{
+		logInLink.click();
+		return new LogInPage();
+	}
+	  
+	
+	public PartnerWithUsPage clickOnPartnerWithUsLink()
+	{
+		partnerWithUsLink.click();
+		return new PartnerWithUsPage();
+	}
+	
+	
+//..................................................................
 	
 	public CoursesPage clickOnCoursesLink()
 	{
@@ -78,14 +145,7 @@ public class HomePage extends TestBase{
 		subscribeLink.click();
 		return new SubscribePage();
 	}
-	
-	
-	public Sponsors_OrganizationPage clickOnSponsors_OrganizationLink()
-	{
-		sponsors_OrganizationLink.click();
-		return new Sponsors_OrganizationPage();
-	}
-	
+
 	
 	public CompanyPage clickOnCompanyLink()
 	{
@@ -94,17 +154,13 @@ public class HomePage extends TestBase{
 	}
 	
 	
-	public LogInPage clickOnLogInLink()
+	public Sponsors_OrganizationPage clickOnSponsors_OrganizationLink()
 	{
-		LogInLink.click();
-		return new LogInPage();
+		schools_OrganizationsLink.click();
+		return new Sponsors_OrganizationPage();
 	}
-	  
-	public ContactUsPage clickOnContactUsLink()
-	{
-		contactUsLink.click();
-		return new ContactUsPage();
-	}
+	
+
 	
 	
 	 

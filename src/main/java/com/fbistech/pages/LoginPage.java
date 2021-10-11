@@ -7,31 +7,49 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.fbistech.base.TestBase;
 
-public class LogInPage extends TestBase{
+public class LogInPage extends TestBase {
+
 	
 //	PageFactory - Object Repository 
 	
-	@FindBy(xpath = "//input[@placeholder='Email/Phone number']") 
+	@FindBy(xpath = "//input[@id='email']") 
 	@CacheLookup
-	WebElement emailPhoneNo;
+	WebElement emailPhoneNoField;
+	
+	
+	@FindBy(xpath = "//*[@class='chakra-icon css-13otjrl']") 
+	@CacheLookup
+	WebElement showPasswordEye;
+	
 
-	@FindBy(xpath = "//input[@placeholder='Password']") 
+	@FindBy(xpath = "//input[@id='password']") 
 	@CacheLookup
-	WebElement passWord;
-	
-	@FindBy(xpath = "//button[@type='button']") 
-	@CacheLookup
-	WebElement loginBtn;
+	WebElement passWordField;
 	
 	
-	@FindBy(xpath = " //a[contains(text(),'Forgot your password?')]")
+	
+	@FindBy(xpath = "//p[contains(text(),'Terms and Conditions')]")  //p[normalize-space()='Terms and Conditions'] 
 	@CacheLookup
-	WebElement forgotPwd;
+	WebElement term_ConditionsLink;
+	
+	
+	
+	@FindBy(xpath = "//button[@type='button']") //button[contains(text(),'Login')] //button[normalize-space()='Login']
+	@CacheLookup
+	WebElement loginButton;
+	
+	
+	
+	
+	@FindBy(xpath = " //a[contains(text(),'Forgot your password?')]") 
+	@CacheLookup
+	WebElement forgotPassWordLink;
+	
 	
 	
 	@FindBy(xpath = "//input [@placeholder='Enter email']") 
 	@CacheLookup
-	WebElement forgotPwdEmail;
+	WebElement forgotPwdEmailField;
 	
 	
 	@FindBy(xpath = "//button[contains(text(),'Continue')]") 
@@ -58,17 +76,20 @@ public class LogInPage extends TestBase{
 
 	public String validateLoginPageTitle()
 	{
-		return driver.getTitle();
+		return driver.getTitle(); //this method should return title of the page 
 	}
 	
 	
 	
-	public HomePage loginDetails(String phoneNo, String password)
+	public HomePage validateUserLogin(String phoneNo, String password) throws Exception
 	{
-		
-		emailPhoneNo.sendKeys(phoneNo);		
-		passWord.sendKeys(password);		
-		loginBtn.click(); 
+		emailPhoneNoField.sendKeys(phoneNo);
+		Thread.sleep(2000);
+		showPasswordEye.click();
+		Thread.sleep(2000);
+		passWordField.sendKeys(password);
+		Thread.sleep(2000);
+		loginButton.click(); 
 		
 		//After login the method should return HomePage
 		return new HomePage();
@@ -77,7 +98,7 @@ public class LogInPage extends TestBase{
 	
 	public LogInPage validateForgotPasswordLink()
 	{
-		forgotPwd.click();
+		forgotPassWordLink.click();
 		return new LogInPage(); 
 	}
 	
@@ -86,14 +107,19 @@ public class LogInPage extends TestBase{
 	public LogInPage forgetPasswordEmail(String passwordEmail) throws Exception
 	{
 		Thread.sleep(2000);
-		forgotPwdEmail.sendKeys(passwordEmail);
+		forgotPwdEmailField.sendKeys(passwordEmail);
 		Thread.sleep(3000);
 		forgotPwdEmailSubmitBtn.click();
 		return new LogInPage();
 	}
 	
 	
-
+	public LogInPage validateTermsAndConditionsLink()
+	{
+		term_ConditionsLink.click();
+		return new LogInPage(); 
+	}
+	
 	
 	public SignUpPage validateCreateFreeAcctLink()
 	{

@@ -35,7 +35,7 @@ public class TestUtil extends TestBase {
 	public static String TESTDATA_SHEET_PATH = "/Users/josephajayi/eclipse-workspace/BeamSity_Website/src/main/"
 			+ "java/com/fbistech/testdata/TestData.xlsx"; //this is location for the excel testdata sheet
 	
-	static Workbook book;
+	static Workbook book; 
 	static org.apache.poi.ss.usermodel.Sheet sheet;
 	
 	

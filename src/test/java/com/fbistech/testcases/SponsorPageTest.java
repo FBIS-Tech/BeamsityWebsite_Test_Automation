@@ -88,7 +88,7 @@ public class SponsorPageTest extends TestBase{
 		sponsorsPage = sponsorsPage.verifyCityropdownValue();
 	}
 	
-	
+	 
 	 
 	@AfterMethod
 	public void tearDown() throws Exception

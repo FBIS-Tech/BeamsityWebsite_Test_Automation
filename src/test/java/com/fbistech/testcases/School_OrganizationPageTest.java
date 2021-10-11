@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.fbistech.base.TestBase;
 import com.fbistech.pages.HomePage;
-import com.fbistech.pages.School_OrganizationPage;
+import com.fbistech.pages.Schools_OrganizationsPage;
 import com.fbistech.pages.Sponsors_OrganizationPage;
 import com.fbistech.util.JiraPolicy;
 
@@ -14,7 +14,7 @@ public class School_OrganizationPageTest extends TestBase
 {
 	HomePage homePage;
 	Sponsors_OrganizationPage sponsors_OrganizationPage;
-	School_OrganizationPage school_OrganizationPage;
+	Schools_OrganizationsPage schools_OrganizationsPage;
 	
 	public School_OrganizationPageTest()
 	{
@@ -29,7 +29,7 @@ public class School_OrganizationPageTest extends TestBase
 		
 		homePage = new HomePage();
 		sponsors_OrganizationPage = new Sponsors_OrganizationPage();
-		school_OrganizationPage = new School_OrganizationPage();
+		schools_OrganizationsPage = new Schools_OrganizationsPage();
 		
 	}
 	
@@ -48,7 +48,7 @@ public class School_OrganizationPageTest extends TestBase
 	{
 		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		Thread.sleep(3000);
-		school_OrganizationPage = school_OrganizationPage.clickOnSponsor_OrganizationForm();	
+		schools_OrganizationsPage = schools_OrganizationsPage.clickOnSponsor_OrganizationForm();	
 	}
 	
 	
@@ -58,8 +58,8 @@ public class School_OrganizationPageTest extends TestBase
 	{
 		sponsors_OrganizationPage = homePage.clickOnSponsors_OrganizationLink();
 		Thread.sleep(3000);
-		school_OrganizationPage = school_OrganizationPage.clickOnSponsor_OrganizationForm();
-		homePage = school_OrganizationPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 
+		schools_OrganizationsPage = schools_OrganizationsPage.clickOnSponsor_OrganizationForm();
+		homePage = schools_OrganizationsPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 
 				prop.getProperty("lastName"), prop.getProperty("emailAddress"), prop.getProperty("phoneNo"));
 	}
 	

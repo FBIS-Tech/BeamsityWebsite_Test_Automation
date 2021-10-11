@@ -1,16 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.fbistech</groupId>
-  <artifactId>Beamsity_Test_Automation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>com.fbistech</groupId>
+	<artifactId>BeamsityWebsite_Test_Automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>Beamsity_Test_Automation</name>
-  <url>http://maven.apache.org</url>
+	<name>BeamsityWebsite_Test_Automation</name>
+	<url>http://maven.apache.org</url>
 
- <properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -20,7 +21,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -30,17 +30,18 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>3.141.59</version>
 		</dependency>
-		
+
+
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.0.0</version>
-			<scope>test</scope>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.4.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -54,8 +55,6 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
 		</dependency>
-
-
 
 
 		<dependency>
@@ -90,11 +89,11 @@
 			<artifactId>spring-aop</artifactId>
 			<version>5.2.8.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>5.0.5</version>
+			<version>5.0.8</version>
 		</dependency>
 
 
@@ -104,11 +103,14 @@
 		    <version>0.5</version>
 		</dependency>
 
+
+
 		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-    		<artifactId>webdrivermanager</artifactId>
-    		<version>4.2.2</version>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>4.4.3</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

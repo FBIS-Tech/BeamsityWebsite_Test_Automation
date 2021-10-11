@@ -30,8 +30,8 @@ public class TestBase {
 		{
 			prop = new Properties();
 //			FileInputStream ip = new FileInputStream("/Users/josephajayi/eclipse-workspace/BeamSity_Website/src/main/java/com/fbistech/config/config.properties");
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/fbistech/config/config.properties");
-			prop.load(ip);	
+			FileInputStream input = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/fbistech/config/config.properties");
+			prop.load(input);	
 			
 		}
 		catch (FileNotFoundException e) 
@@ -49,17 +49,17 @@ public class TestBase {
 	{
 		String browserName = prop.getProperty("browser");
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/chromedriver87v" );
+		System.setProperty("webdriver.chrome.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/driver.Chrome/chromedriver94v");
 		driver = new ChromeDriver();
 
 		
 //		if(browserName.equals("Chrome"))
 //		{
-//			System.setProperty("webdriver.chrome.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/chromedriver87v");	
+//			System.setProperty("webdriver.chrome.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/driver.Chrome/chromedriver87v");	
 //			driver = new ChromeDriver();    
 //		}
 //		else if(browserName.equals("FF")){
-//			System.setProperty("webdriver.gecko.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/geckodriver");	
+//			System.setProperty("webdriver.gecko.driver", "/Users/josephajayi/Desktop/Selenium Drivers/web-Drivers-2020/driver.Firefox/geckodriver v29");	
 //			driver = new FirefoxDriver(); 
 //		}
 //		else 
