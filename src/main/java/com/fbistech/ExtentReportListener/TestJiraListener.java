@@ -17,12 +17,12 @@ public class TestJiraListener implements ITestListener {
  *  all the methods which are available in that particular interface.
  */
 	
-	@Override
+	@Override 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-
-	}
-
+ 
+	} 
+  
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -39,7 +39,7 @@ public class TestJiraListener implements ITestListener {
 		boolean isTicketReady = jiraPolicy.logTicketReady();
 		
 		if (isTicketReady)
-		{
+		{ 
 			// if isTicketReady is true raise Jira ticket:
 			System.out.println("Is ticket ready for JIRA: " + isTicketReady);
 			

@@ -61,7 +61,9 @@ public class LoginPageTest extends TestBase{
 	{
 		logInPage = homePage.clickOnLogInLink();
 //		Thread.sleep(2000);
-		homePage = logInPage.validateUserLogin(prop.getProperty("phoneNo"), prop.getProperty("password"));
+		homePage = logInPage.validateUserLogin();
+
+//		homePage = logInPage.validateUserLogin(prop.getProperty("phoneNo"), prop.getProperty("password"));
 		Thread.sleep(5000);
 
 	}

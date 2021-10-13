@@ -1,5 +1,6 @@
 package com.fbistech.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -12,8 +13,11 @@ public class LogInPage extends TestBase {
 	
 //	PageFactory - Object Repository 
 	
-	@FindBy(xpath = "//input[@id='email']") 
-	@CacheLookup
+	
+//	 WemailPhoneNoField = driver.findElement(By.id("//input[@id='email']"));
+	@FindBy(xpath= "//input[@id='email']")
+//	@FindBy(xpath= "//input[@placeholder='Email/Phone number']")     
+//	@CacheLookup
 	WebElement emailPhoneNoField;
 	
 	
@@ -81,14 +85,16 @@ public class LogInPage extends TestBase {
 	
 	
 	
-	public HomePage validateUserLogin(String phoneNo, String password) throws Exception
+//	public HomePage validateUserLogin(String phoneNo, String password) throws Exception
+	public HomePage validateUserLogin() throws Exception
+
 	{
-		emailPhoneNoField.sendKeys(phoneNo);
-		Thread.sleep(2000);
+		emailPhoneNoField.sendKeys("nirsaladmin@beamsity.com");
+//		Thread.sleep(2000); 
 		showPasswordEye.click();
-		Thread.sleep(2000);
-		passWordField.sendKeys(password);
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
+		passWordField.sendKeys("password");
+//		Thread.sleep(2000);
 		loginButton.click(); 
 		
 		//After login the method should return HomePage
@@ -111,7 +117,7 @@ public class LogInPage extends TestBase {
 		Thread.sleep(3000);
 		forgotPwdEmailSubmitBtn.click();
 		return new LogInPage();
-	}
+	} 
 	
 	
 	public LogInPage validateTermsAndConditionsLink()

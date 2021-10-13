@@ -34,7 +34,7 @@ public class SignupPageTest extends TestBase {
 		logInPage = new LogInPage();
 	}
 
-	
+	 
 	@JiraPolicy(logTicketReady=true)
 	@Test(priority=1)
 	public void verifyUserSignUpPageTitle() throws Exception

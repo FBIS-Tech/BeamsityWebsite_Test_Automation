@@ -20,7 +20,7 @@ public class SubscribePageTest extends TestBase {
 	{
 		super();
 
-	}
+	} 
 	
 	
 	

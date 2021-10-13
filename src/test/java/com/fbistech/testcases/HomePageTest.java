@@ -1,5 +1,7 @@
 package com.fbistech.testcases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -43,7 +45,7 @@ public class HomePageTest extends TestBase {
 		super();
 	}
 	
-	
+	 
 	// Test cases should separated --- independent with each other
 	// Before each test case --- launch the browser and login
 	// @Test --- execute test case
@@ -70,14 +72,14 @@ public class HomePageTest extends TestBase {
 	}
 	
 	 
-	@JiraPolicy(logTicketReady=true)
-	@Test(priority = 1)
-	public void verifyHomePageTitleTest()
-	{
-		String homePageTitle = homePage.verifyHomePageTitle(); 
-		System.out.println(homePageTitle);
-		Assert.assertEquals(homePageTitle, "Beamsity Page Not Found");
-	}
+//	@JiraPolicy(logTicketReady=true)
+//	@Test(priority = 1)
+//	public void verifyHomePageTitleTest()
+//	{
+//		String homePageTitle = homePage.verifyHomePageTitle(); 
+//		System.out.println(homePageTitle);
+//		Assert.assertEquals(homePageTitle, "Beamsity Page Not Found");
+//	}
 	
 
 	
@@ -94,12 +96,43 @@ public class HomePageTest extends TestBase {
 //		techOnBeamsityPage = homePage.clickOnTechOnBeamsityLink();
 //	}
 //	
-//	@Test(priority = 4)
-//	public void verifyUserCanClickOnContactUsLink()
-//	{
-//		contactUsPage = homePage.clickOnContactUsLink();
-//	}
-//	
+	
+	
+	@Test(priority = 4)
+	public void verifyUserCanClickOnContactUsLinks() throws Exception
+	{
+		contactUsPage = homePage.clickOnContactUsLinks();
+		
+//	<-----	Assertion on contact us url ------>
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		Assert.assertEquals("https://beamsity.com/contactus", url);
+		
+//	<--- Validating Contact Us! text is display and running two layers of assertion ---->
+		WebElement element = driver.findElement(By.className("SectionOneTitle"));
+		System.out.println(element.getText());
+		Assert.assertEquals("Contact Us!", element.getText());	
+		
+		boolean text = driver.getPageSource().contains("Contact Us!");
+		Assert.assertEquals(text, true);
+		
+		
+//		if(driver.getPageSource().contains("Contact Us!"))
+//		{
+//			System.out.println("Contact Us! is display");
+//		} 
+//		else
+//		{
+//			System.out.println("Text not Present");
+//		}
+	}
+	
+	
+	
+	
+	
+	
+	
 //	
 //	@Test(priority = 5)
 //	public void verifyUserCanClickOnLogInLink()
@@ -113,9 +146,36 @@ public class HomePageTest extends TestBase {
 //	{
 //		partnerWithUsPage = homePage.clickOnPartnerWithUsLink();
 //	}
-//	
-//	
-//	
+
+
+	
+	
+	
+	
+//	@Test(priority = 6)
+//	public void verifyUserCanclickOnPartnerWithUsLink()
+//	{
+//		partnerWithUsPage = homePage.clickOnPartnerWithUsLink();
+//	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //	
 //	
 //	@Test(priority = 7)
@@ -160,7 +220,7 @@ public class HomePageTest extends TestBase {
 	@AfterMethod
 	public void teardown() throws Exception
 	{	
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		driver.quit();
 	}
 

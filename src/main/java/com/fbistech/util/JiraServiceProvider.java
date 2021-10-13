@@ -10,7 +10,7 @@ import net.rcarz.jiraclient.JiraException;
 public class JiraServiceProvider {
 
 	
-	public JiraClient jira;
+	public JiraClient jira;  
 	public String project;
 
 	/* Constructor of the class */
@@ -24,7 +24,7 @@ public class JiraServiceProvider {
 	}
 
 	public void createJiraTicket(String issueType, String summary, String description, String reporterName) {
-
+ 
 		try {
 			FluentCreate fleuntCreate = jira.createIssue(project, issueType);
 			fleuntCreate.field(Field.SUMMARY, summary);

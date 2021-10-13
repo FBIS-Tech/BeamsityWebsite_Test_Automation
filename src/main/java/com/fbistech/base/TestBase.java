@@ -32,7 +32,7 @@ public class TestBase {
 //			FileInputStream ip = new FileInputStream("/Users/josephajayi/eclipse-workspace/BeamSity_Website/src/main/java/com/fbistech/config/config.properties");
 			FileInputStream input = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/fbistech/config/config.properties");
 			prop.load(input);	
-			
+			 
 		}
 		catch (FileNotFoundException e) 
 		{ 
