@@ -1,5 +1,7 @@
 package com.fbistech.ExtentReportListener;
+import java.io.File;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -11,24 +13,25 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
+import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+//this is a standard extent report listener template
 
-
-public class ExtentReporterNG implements IReporter {
+public class ExtentReportListener implements IReporter {
 	
 	
-	public ExtentReporterNG extent; 
+	private ExtentReports extent; 
 	
 	
-	public ExtentReporterNG() 
-	{
-		super();  
-	}
+//	public ExtentReportListener(String string, boolean b) 
+//	{
+//		super();  
+//	}
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,  String outputDirectory) 
 	{  
-		extent = new ExtentReporterNG();
+		extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
  
 		for (ISuite suite : suites) 
 		{
@@ -47,14 +50,14 @@ public class ExtentReporterNG implements IReporter {
 		extent.close();
 	}
 
-	private void close() {
-		// TODO Auto-generated method stub
-		
-	}
-	private void flush() {
-		// TODO Auto-generated method stub
-		
-	}
+//	private void close() {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//	private void flush() {
+//		// TODO Auto-generated method stub
+//		
+//	}
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
 
@@ -83,15 +86,15 @@ public class ExtentReporterNG implements IReporter {
 		}
 	}
 
-	private void endTest(ExtentTest test) {
-		// TODO Auto-generated method stub
-		
-	}
-	private ExtentTest startTest(String methodName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	private java.util.Date getTime(long millis) {
+//	private void endTest(ExtentTest test) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//	private ExtentTest startTest(String methodName) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+	private Date getTime(long millis) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();

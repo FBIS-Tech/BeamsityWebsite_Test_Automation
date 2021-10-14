@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27137" started-at="2021-10-12T08:48:39 WAT" finished-at="2021-10-12T08:49:06 WAT">
+  <suite name="Default suite" duration-ms="18818" started-at="2021-10-13T06:06:07 WAT" finished-at="2021-10-13T06:06:25 WAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27137" started-at="2021-10-12T08:48:39 WAT" finished-at="2021-10-12T08:49:06 WAT">
+    <test name="Default test" duration-ms="18818" started-at="2021-10-13T06:06:07 WAT" finished-at="2021-10-13T06:06:25 WAT">
       <class name="com.fbistech.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.HomePageTest@8646db9]" name="setUp" is-config="true" duration-ms="15732" started-at="2021-10-12T08:48:39 WAT" finished-at="2021-10-12T08:48:55 WAT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.HomePageTest@4671e53b]" name="setUp" is-config="true" duration-ms="7421" started-at="2021-10-13T06:06:07 WAT" finished-at="2021-10-13T06:06:14 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserCanClickOnContactUsLinks()[pri:4, instance:com.fbistech.testcases.HomePageTest@8646db9]" name="verifyUserCanClickOnContactUsLinks" duration-ms="6279" started-at="2021-10-12T08:48:55 WAT" finished-at="2021-10-12T08:49:01 WAT">
+        <test-method status="PASS" signature="verifyUserCanClickOnContactUsLinks()[pri:4, instance:com.fbistech.testcases.HomePageTest@4671e53b]" name="verifyUserCanClickOnContactUsLinks" duration-ms="6271" started-at="2021-10-13T06:06:14 WAT" finished-at="2021-10-13T06:06:20 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanClickOnContactUsLinks -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.fbistech.testcases.HomePageTest@8646db9]" name="teardown" is-config="true" duration-ms="5092" started-at="2021-10-12T08:49:01 WAT" finished-at="2021-10-12T08:49:06 WAT">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.fbistech.testcases.HomePageTest@4671e53b]" name="teardown" is-config="true" duration-ms="5089" started-at="2021-10-13T06:06:20 WAT" finished-at="2021-10-13T06:06:25 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
