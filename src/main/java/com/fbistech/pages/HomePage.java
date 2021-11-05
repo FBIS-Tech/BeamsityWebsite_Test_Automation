@@ -49,7 +49,7 @@ public class HomePage extends TestBase{
 	
 	
 	
-	@FindBy(xpath = "//a[normalize-space()='Login']") // "//a[contains(text(),'Sign In')]"
+	@FindBy(xpath = "/a[contains(text(),'Sign In')]")  //a[normalize-space()='Login']
 	@CacheLookup
 	WebElement logInLink;
 	

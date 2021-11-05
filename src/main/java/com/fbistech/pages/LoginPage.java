@@ -14,32 +14,29 @@ public class LogInPage extends TestBase {
 //	PageFactory - Object Repository 
 	
 	
-//	 WemailPhoneNoField = driver.findElement(By.id("//input[@id='email']"));
-	@FindBy(xpath= "//input[@id='email']")
-//	@FindBy(xpath= "//input[@placeholder='Email/Phone number']")     
+	@FindBy(xpath = "//input[@id='email']")  //input[@placeholder='Email/Phone number']    
 //	@CacheLookup
 	WebElement emailPhoneNoField;
 	
 	
 	@FindBy(xpath = "//*[@class='chakra-icon css-13otjrl']") 
-	@CacheLookup
+//	@CacheLookup
 	WebElement showPasswordEye;
 	
 
-	@FindBy(xpath = "//input[@id='password']") 
-	@CacheLookup
+	@FindBy(xpath="//input[@id='password']")
+//	@CacheLookup
 	WebElement passWordField;
 	
 	
 	
 	@FindBy(xpath = "//p[contains(text(),'Terms and Conditions')]")  //p[normalize-space()='Terms and Conditions'] 
-	@CacheLookup
+//	@CacheLookup
 	WebElement term_ConditionsLink;
 	
 	
-	
-	@FindBy(xpath = "//button[@type='button']") //button[contains(text(),'Login')] //button[normalize-space()='Login']
-	@CacheLookup
+	@FindBy(xpath="//button[contains(text(),'Login')]") //button[@type='button'] //button[normalize-space()='Login']
+//	@CacheLookup
 	WebElement loginButton;
 	
 	

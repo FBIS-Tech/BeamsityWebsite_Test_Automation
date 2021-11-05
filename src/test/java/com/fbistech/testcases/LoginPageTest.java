@@ -56,16 +56,17 @@ public class LoginPageTest extends TestBase{
 //		logInPage = homePage.clickOnLogInLink();
 //	}
 	
+	
+	
 	@Test(priority = 3)
 	public void verifyUserLoginWithValideDetails() throws Exception
 	{
 		logInPage = homePage.clickOnLogInLink();
-//		Thread.sleep(2000);
+		Thread.sleep(2000);
 		homePage = logInPage.validateUserLogin();
 
 //		homePage = logInPage.validateUserLogin(prop.getProperty("phoneNo"), prop.getProperty("password"));
 		Thread.sleep(5000);
-
 	}
 	
 //	
@@ -117,7 +118,7 @@ public class LoginPageTest extends TestBase{
 	public void tearDown() throws Exception
 	{
 		Thread.sleep(7000);
-//		driver.quit(); 
+		driver.quit(); 
 	}
 	
 	

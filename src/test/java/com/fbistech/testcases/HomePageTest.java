@@ -89,13 +89,13 @@ public class HomePageTest extends TestBase {
 //		schools_OrganizationsPage = homePage.clickOnSchools_OrganizationsLink();
 //	}
 	
-//	
+	
 //	@Test(priority = 3)
 //	public void verifyUserCanClickOnTeachOnBeamsitykLink()
 //	{
 //		techOnBeamsityPage = homePage.clickOnTechOnBeamsityLink();
 //	}
-//	
+	
 	
 	
 	@Test(priority = 4)

@@ -36,6 +36,15 @@ public class Schools_OrganizationsPage extends TestBase{
 	WebElement proceedBtn;
 
 
+//	--------------------
+	
+	@FindBy(xpath = "//span[contains(text(),'Get Started')]") 
+	WebElement getStartedLink;
+	
+	
+	@FindBy(xpath = "//button[contains(text(),'Contact Us')]") 
+	WebElement contactUsLink;
+	
 
 
 
