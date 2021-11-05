@@ -84,7 +84,7 @@ public class LoginPage extends TestBase {
 	@CacheLookup
 	WebElement forgotYourPasswordPageNameLabel; 
 	
-	
+	 
 	
 	@FindBy(xpath = " //a[contains(text(),'Forgot your password?')]") 
 	@CacheLookup
@@ -105,7 +105,7 @@ public class LoginPage extends TestBase {
 	
 	@FindBy(xpath = "//img[@alt='cancel']") 
 	@CacheLookup
-	WebElement cancelForgotPassowrdButton;
+	WebElement cancel_ForgotPassowrdButton;
 	
 	
 	
@@ -121,13 +121,20 @@ public class LoginPage extends TestBase {
 	@CacheLookup
 	WebElement emailMustBeAValidEmailAddressErrorPrompt;
 	
-	
+					
+	@FindBy(xpath = " //li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//div[@id='8']//button[@aria-label='Close']
+	@CacheLookup
+	WebElement cancel_EmailMustBeAValidEmailAddressErrorPrompt;
 	
 	
 	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The selected email is invalid.']") 
 	@CacheLookup
 	WebElement selectedEmailIsInvalidErrorPrompt;
 	
+	
+	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//button[@aria-label='Close']   
+	@CacheLookup
+	WebElement cancel_SelectedEmailIsInvalidErrorPrompt;
 	
 //	@FindBy(xpath = "") 
 //	@CacheLookup
@@ -270,18 +277,40 @@ public class LoginPage extends TestBase {
 	}
 	
 	 
-	
-	public String validateSelectedEmailIsInvalidErrorPrompt()
-	{
-		return selectedEmailIsInvalidErrorPrompt.getText();
-	}
-	
+
 	
 	
 	public String validateEmailMustBeAValidEmailAddressErrorPrompt()
 	{
 		return emailMustBeAValidEmailAddressErrorPrompt.getText();
 	}
+	
+	
+		
+//	/	jjjjjjjjjj
+	public LoginPage validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptButton()
+	{
+		cancel_EmailMustBeAValidEmailAddressErrorPrompt.click();
+		return new LoginPage();
+	}
+	
+	
+
+	public String validateSelectedEmailIsInvalidErrorPrompt()
+	{
+		return selectedEmailIsInvalidErrorPrompt.getText();
+	}
+	
+	
+	public LoginPage validateClickOnCancel_SelectedEmailIsInvalidErrorPrompttButton()
+	{
+		cancel_SelectedEmailIsInvalidErrorPrompt.click();
+		return new LoginPage();
+	}
+	
+	
+	
+	
 	
 	
 	public LoginPage validateClickOnCancelInvalidLoginErrorPromptButton()
@@ -323,7 +352,7 @@ public class LoginPage extends TestBase {
 
 	public LoginPage validateClickOnCancelForgetPasswordProcess()
 	{
-		cancelForgotPassowrdButton.click();
+		cancel_ForgotPassowrdButton.click();
 		return new LoginPage(); 
 	}
 	

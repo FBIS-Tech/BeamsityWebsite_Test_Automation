@@ -538,7 +538,7 @@ public class LoginPageTest extends TestBase{
         loginPage = loginPage.validateClickOnForgotPasswordLink();
         
         Thread.sleep(2000);    		
-        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("userEmailWithoutServerHostName"));
+        loginPage = loginPage.validateUserForgotPasswordWithValidEmail(prop.getProperty("emailWithoutServerHostName"));
         
 //      <--- Validating login URL and running an assertion ---->
         String url = driver.getCurrentUrl();
@@ -553,11 +553,11 @@ public class LoginPageTest extends TestBase{
 		
 		
 		String invalidEmailPrompt1 = loginPage.validateEmailMustBeAValidEmailAddressErrorPrompt();
-		Assert.assertEquals(invalidEmailPrompt1, "The password must be at least 6 characters.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailPrompt1, "The email must be a valid email address.", "Text displayed does not matched");
 		System.out.println(invalidEmailPrompt1);
 //		
 		String invalidEmailPrompt2 = loginPage.validateSelectedEmailIsInvalidErrorPrompt();
-		Assert.assertEquals(invalidEmailPrompt2, "The password must be at least 6 characters.", "Text displayed does not matched");
+		Assert.assertEquals(invalidEmailPrompt2, "The selected email is invalid.", "Text displayed does not matched");
 		System.out.println(invalidEmailPrompt2);
 		
 //		boolean text = driver.getPageSource().contains("The password must be at least 6 characters.");
@@ -565,7 +565,9 @@ public class LoginPageTest extends TestBase{
 //		Assert.assertTrue(text);
 //		
 		Thread.sleep(1000);    		
-		loginPage = loginPage.validateClickOnCancelInvalidLoginErrorPromptButton();
+		loginPage = loginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptButton();
+		Thread.sleep(1000);   
+		loginPage = loginPage.validateClickOnCancel_SelectedEmailIsInvalidErrorPrompttButton();
 	}
 	
 	
