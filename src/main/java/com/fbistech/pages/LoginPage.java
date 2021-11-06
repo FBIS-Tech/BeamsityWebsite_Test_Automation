@@ -121,7 +121,8 @@ public class LoginPage extends TestBase {
 	WebElement emailMustBeAValidEmailAddressErrorPrompt;
 	
 					
-	@FindBy(xpath = " //li[@class='chakra-toast']//div[@id='18']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//div[@id='8']//button[@aria-label='Close']
+
+	@FindBy(xpath = " //li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//div[@id='8']//button[@aria-label='Close']
 	@CacheLookup
 	WebElement cancel_EmailMustBeAValidEmailAddressErrorPrompt;
 	
@@ -131,21 +132,11 @@ public class LoginPage extends TestBase {
 	WebElement selectedEmailIsInvalidErrorPrompt;
 	
 	
-	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") 
+
+	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//button[@aria-label='Close']   
 	@CacheLookup
 	WebElement cancel_SelectedEmailIsInvalidErrorPrompt;
 	
-//	@FindBy(xpath = "") 
-//	@CacheLookup
-//	WebElement ;
-	
-//	@FindBy(xpath = "") 
-//	@CacheLookup
-//	WebElement ;
-	
-//	@FindBy(xpath = "") 
-//	@CacheLookup
-//	WebElement ;
 	
 	
 	
@@ -275,22 +266,31 @@ public class LoginPage extends TestBase {
 		return loginInvalidCredentialsEnteredPrompt.getText();
 	}
 	
-	 
-
 	
 	
+	
+	
+		
 	public String validateEmailMustBeAValidEmailAddressErrorPrompt()
 	{
 		return emailMustBeAValidEmailAddressErrorPrompt.getText();
 	}
 	
 	
+	public LoginPage validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptBtn()
+	{
+		cancel_EmailMustBeAValidEmailAddressErrorPrompt.click();
+		return new LoginPage();
+	}
 	
+		
 	public boolean validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptButton()
 	{
 		cancel_EmailMustBeAValidEmailAddressErrorPrompt.click();
 		return true;
 	}
+	
+	
 	
 	
 
@@ -300,12 +300,20 @@ public class LoginPage extends TestBase {
 	}
 	
 	
+	public LoginPage validateClickOnCancel_SelectedEmailIsInvalidErrorPromptBtn()
+	{
+		cancel_SelectedEmailIsInvalidErrorPrompt.click();
+		return new LoginPage();
+	}
+	
 	public boolean validateClickOnCancel_SelectedEmailIsInvalidErrorPromptButton()
 	{
 		cancel_SelectedEmailIsInvalidErrorPrompt.click();
 		return true;
-		
 	}
+	
+	
+	
 	
 	
 	

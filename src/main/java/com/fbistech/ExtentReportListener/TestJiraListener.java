@@ -20,13 +20,13 @@ public class TestJiraListener implements ITestListener {
 	@Override 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
- 
+   
 	} 
-  
+   
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-
+ 
 	}
 
 	
