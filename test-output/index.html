@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName">verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +118,82 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanClickForgotPasswordLink">verifyUserCanClickForgotPasswordLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanClickOnLoginLink">verifyUserCanClickOnLoginLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanClickOnTermsAndConditionsLink">verifyUserCanClickOnTermsAndConditionsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanLoginWith_ValideCredentials">verifyUserCanLoginWith_ValideCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanNavigateToTermsAndConditionsPage">verifyUserCanNavigateToTermsAndConditionsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanResetForgetPassword">verifyUserCanResetForgetPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCanTerminateForgotPasswordProcess">verifyUserCanTerminateForgotPasswordProcess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword">verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword">verifyUserCannotLoginWith_EmptyEmail_AndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_InvalidEmail_ValidPassword">verifyUserCannotLoginWith_InvalidEmail_ValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_InvalideCredentials">verifyUserCannotLoginWith_InvalideCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters">verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_ValidEmail_EmptyPassword">verifyUserCannotLoginWith_ValidEmail_EmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotLoginWith_ValidEmail_InvalidPassword">verifyUserCannotLoginWith_ValidEmail_InvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName">verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.fbistech.testcases.LoginPageTest" hash-for-method="verifyUserCannotResetForgetPasswordWithEmptyInputField">verifyUserCannotResetForgetPasswordWithEmptyInputField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,6 +208,85 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.fbistech.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName">
+                  </a> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName -->
+                  <span class="method-name">verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@class=&apos;chakra-toast&apos;]//div[@id=&apos;12&apos;]//*[@class=&apos;chakra-icon css-onkibi&apos;]&quot;}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;Josephs-MacBoo.local&apos;, ip: &apos;fd00:0:0:1:f8a7:4d18:97e9:8a03%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2789ef781ff2230124cb660f2f6317db
+*** Element info: {Using=xpath, value=//li[@class=&apos;chakra-toast&apos;]//div[@id=&apos;12&apos;]//*[@class=&apos;chakra-icon css-onkibi&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.fbistech.pages.LoginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptBtn(LoginPage.java:307)
+	at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName(LoginPageTest.java:639)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -127,9 +295,114 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyUserCanClickForgotPasswordLink">
+                  </a> <!-- verifyUserCanClickForgotPasswordLink -->
+                  <span class="method-name">verifyUserCanClickForgotPasswordLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanClickOnLoginLink">
+                  </a> <!-- verifyUserCanClickOnLoginLink -->
+                  <span class="method-name">verifyUserCanClickOnLoginLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanClickOnTermsAndConditionsLink">
+                  </a> <!-- verifyUserCanClickOnTermsAndConditionsLink -->
+                  <span class="method-name">verifyUserCanClickOnTermsAndConditionsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanLoginWith_ValideCredentials">
+                  </a> <!-- verifyUserCanLoginWith_ValideCredentials -->
+                  <span class="method-name">verifyUserCanLoginWith_ValideCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanNavigateToTermsAndConditionsPage">
+                  </a> <!-- verifyUserCanNavigateToTermsAndConditionsPage -->
+                  <span class="method-name">verifyUserCanNavigateToTermsAndConditionsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanResetForgetPassword">
+                  </a> <!-- verifyUserCanResetForgetPassword -->
+                  <span class="method-name">verifyUserCanResetForgetPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanTerminateForgotPasswordProcess">
+                  </a> <!-- verifyUserCanTerminateForgotPasswordProcess -->
+                  <span class="method-name">verifyUserCanTerminateForgotPasswordProcess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword">
+                  </a> <!-- verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword -->
+                  <span class="method-name">verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword">
+                  </a> <!-- verifyUserCannotLoginWith_EmptyEmail_AndValidPassword -->
+                  <span class="method-name">verifyUserCannotLoginWith_EmptyEmail_AndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_InvalidEmail_ValidPassword">
+                  </a> <!-- verifyUserCannotLoginWith_InvalidEmail_ValidPassword -->
+                  <span class="method-name">verifyUserCannotLoginWith_InvalidEmail_ValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_InvalideCredentials">
+                  </a> <!-- verifyUserCannotLoginWith_InvalideCredentials -->
+                  <span class="method-name">verifyUserCannotLoginWith_InvalideCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters">
+                  </a> <!-- verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters -->
+                  <span class="method-name">verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_ValidEmail_EmptyPassword">
+                  </a> <!-- verifyUserCannotLoginWith_ValidEmail_EmptyPassword -->
+                  <span class="method-name">verifyUserCannotLoginWith_ValidEmail_EmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotLoginWith_ValidEmail_InvalidPassword">
+                  </a> <!-- verifyUserCannotLoginWith_ValidEmail_InvalidPassword -->
+                  <span class="method-name">verifyUserCannotLoginWith_ValidEmail_InvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName">
                   </a> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName -->
                   <span class="method-name">verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCannotResetForgetPasswordWithEmptyInputField">
+                  </a> <!-- verifyUserCannotResetForgetPasswordWithEmptyInputField -->
+                  <span class="method-name">verifyUserCannotResetForgetPasswordWithEmptyInputField</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +410,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/j4/j04gn4bj1dl177nd39f_c1h80000gn/T/testng-eclipse--1130106859/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/j4/j04gn4bj1dl177nd39f_c1h80000gn/T/testng-eclipse--2025245473/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +459,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName')
+data.setCell(0, 1, 'verifyUserCanLoginWith_ValideCredentials')
 data.setCell(0, 2, 'com.fbistech.testcases.LoginPageTest')
-data.setCell(0, 3, 17517);
+data.setCell(0, 3, 35715);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName')
+data.setCell(1, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(1, 3, 26865);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUserCannotLoginWith_ValidEmail_EmptyPassword')
+data.setCell(2, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(2, 3, 22475);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserCannotLoginWith_ValidEmail_InvalidPassword')
+data.setCell(3, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(3, 3, 21292);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword')
+data.setCell(4, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(4, 3, 19884);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyUserCannotLoginWith_InvalidEmail_ValidPassword')
+data.setCell(5, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(5, 3, 19868);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUserCannotLoginWith_EmptyEmail_AndValidPassword')
+data.setCell(6, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(6, 3, 19810);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUserCanResetForgetPassword')
+data.setCell(7, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(7, 3, 17132);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyUserCannotResetForgetPasswordWithEmptyInputField')
+data.setCell(8, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(8, 3, 17084);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyUserCannotLoginWith_InvalideCredentials')
+data.setCell(9, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(9, 3, 16464);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters')
+data.setCell(10, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(10, 3, 16235);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName')
+data.setCell(11, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(11, 3, 15903);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyUserCanTerminateForgotPasswordProcess')
+data.setCell(12, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(12, 3, 10288);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyUserCanClickOnLoginLink')
+data.setCell(13, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(13, 3, 7215);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyUserCanClickForgotPasswordLink')
+data.setCell(14, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(14, 3, 6239);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyUserCanClickOnTermsAndConditionsLink')
+data.setCell(15, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(15, 3, 5028);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyUserCanNavigateToTermsAndConditionsPage')
+data.setCell(16, 2, 'com.fbistech.testcases.LoginPageTest')
+data.setCell(16, 3, 4715);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -227,12 +564,206 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName</span>
-                <span class="method-start">6804 ms</span>
+                <span class="method-name">verifyUserCanClickOnLoginLink</span>
+                <span class="method-start">7108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24324 ms</span>
+                <span class="method-start">14325 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanLoginWith_ValideCredentials</span>
+                <span class="method-start">34555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">70271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">76403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_InvalideCredentials</span>
+                <span class="method-start">80374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">96840 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">102953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_ValidEmail_InvalidPassword</span>
+                <span class="method-start">109057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">130351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">136456 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_InvalidEmail_ValidPassword</span>
+                <span class="method-start">141744 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161613 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">167719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword</span>
+                <span class="method-start">171385 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">191270 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">197395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_EmptyEmail_AndValidPassword</span>
+                <span class="method-start">214231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">234042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">240156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_ValidEmail_EmptyPassword</span>
+                <span class="method-start">257021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">279497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">285602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters</span>
+                <span class="method-start">291455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">307691 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">313804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanClickForgotPasswordLink</span>
+                <span class="method-start">329822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">336062 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">342177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanTerminateForgotPasswordProcess</span>
+                <span class="method-start">345983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">356271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">362379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanResetForgetPassword</span>
+                <span class="method-start">377207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">394340 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">400460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName</span>
+                <span class="method-start">415755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">442625 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">448738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName</span>
+                <span class="method-start">455472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">471376 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">477487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCannotResetForgetPasswordWithEmptyInputField</span>
+                <span class="method-start">484212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">501297 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">507413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanNavigateToTermsAndConditionsPage</span>
+                <span class="method-start">512337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">517052 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">523164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserCanClickOnTermsAndConditionsLink</span>
+                <span class="method-start">534252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">539281 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,10 +6,8 @@
       <class name="com.fbistech.testcases.LoginPageTest">
         <methods>
           <include name="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName"/>
-          <include name="verifyUserCanClickForgotPasswordLink"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyUserLoginWith_ValideCredentials"/>
         </methods>
       </class> <!-- com.fbistech.testcases.LoginPageTest -->
     </classes>

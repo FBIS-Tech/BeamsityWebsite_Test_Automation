@@ -63,9 +63,9 @@ public class LoginPage extends TestBase {
 		
 	
 	
-	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") 
-	@CacheLookup
-	WebElement cancelInvalidLoginErrorPromptButton;
+//	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") 
+//	@CacheLookup
+//	WebElement cancelInvalidLoginErrorPromptButton;
 	
 	
 	
@@ -110,38 +110,47 @@ public class LoginPage extends TestBase {
 	
 	
 	
-	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email field is required.']") 
+	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9']"
+			+ "[normalize-space()='The email field is required.']") 
 	@CacheLookup
 	WebElement emailFieldIsRequiredErrorPrompt;
 	
+	
+	
+	
+	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9']"
+			+ "[normalize-space()='The password field is required.']") 
+	@CacheLookup
+	WebElement passwordFieldIsRequiredErrorPrompt;
+	
+	
+	
+	
 
 	
-	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The email must be a valid email address.']") 
+	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9']"
+			+ "[normalize-space()='The email must be a valid email address.']") 
 	@CacheLookup
 	WebElement emailMustBeAValidEmailAddressErrorPrompt;
 	
-					
+					 
 
-	@FindBy(xpath = " //li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//div[@id='8']//button[@aria-label='Close']
+	@FindBy(xpath = "//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//div[@id='8']//button[@aria-label='Close']
 	@CacheLookup
 	WebElement cancel_EmailMustBeAValidEmailAddressErrorPrompt;
 	
 	
-	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9'][normalize-space()='The selected email is invalid.']") 
+	
+	@FindBy(xpath = "//li[@class='chakra-toast']//div[@class='chakra-alert__desc css-zycdy9']"
+			+ "[normalize-space()='The selected email is invalid.']") 
 	@CacheLookup
 	WebElement selectedEmailIsInvalidErrorPrompt;
+	  
 	
-	
-
-	@FindBy(xpath = "//li[@class='chakra-toast']//*[@class='chakra-icon css-onkibi']") //li[@class='chakra-toast']//button[@aria-label='Close']   
+					  																	
+	@FindBy(xpath = "//li[@class='chakra-toast']//button[@aria-label='Close']")  
 	@CacheLookup
 	WebElement cancel_SelectedEmailIsInvalidErrorPrompt;
-	
-	
-	
-	
-	
-
 	
 	
 	
@@ -200,7 +209,8 @@ public class LoginPage extends TestBase {
 		showPasswordEye.click(); 
 		Thread.sleep(2000); 
 		loginButton.click(); 
-		 
+		Thread.sleep(5000); 
+
 		//After login the method should return PortalDashboardPage
 		return new PortalDashboardPage();
 	}
@@ -270,6 +280,21 @@ public class LoginPage extends TestBase {
 	
 	
 	
+	public String validateEmailFieldIsRequiredErrorPrompt()
+	{
+		return emailFieldIsRequiredErrorPrompt.getText();
+	}
+	
+	
+	public String validatePasswordFieldIsRequiredErrorPrompt()
+	{
+		return passwordFieldIsRequiredErrorPrompt.getText();
+	}
+	
+	
+	
+	
+	
 		
 	public String validateEmailMustBeAValidEmailAddressErrorPrompt()
 	{
@@ -320,11 +345,11 @@ public class LoginPage extends TestBase {
 	
 	
 	
-	public LoginPage validateClickOnCancelInvalidLoginErrorPromptButton()
-	{
-		cancelInvalidLoginErrorPromptButton.click();
-		return new LoginPage();
-	}
+//	public LoginPage validateClickOnCancelInvalidLoginErrorPromptButton()
+//	{
+//		cancelInvalidLoginErrorPromptButton.click();
+//		return new LoginPage();
+//	}
 	
 	
 	

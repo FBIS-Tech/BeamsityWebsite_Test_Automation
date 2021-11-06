@@ -1,21 +1,291 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="17" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29497" started-at="2021-11-06T20:37:51 WAT" finished-at="2021-11-06T20:38:20 WAT">
+  <suite name="Default suite" duration-ms="545419" started-at="2021-11-06T23:56:45 WAT" finished-at="2021-11-07T00:05:50 WAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29497" started-at="2021-11-06T20:37:51 WAT" finished-at="2021-11-06T20:38:20 WAT">
+    <test name="Default test" duration-ms="545419" started-at="2021-11-06T23:56:45 WAT" finished-at="2021-11-07T00:05:50 WAT">
       <class name="com.fbistech.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@22eeefeb]" name="setUp" is-config="true" duration-ms="6802" started-at="2021-11-06T20:37:51 WAT" finished-at="2021-11-06T20:37:58 WAT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="7106" started-at="2021-11-06T23:56:45 WAT" finished-at="2021-11-06T23:56:52 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName()[pri:13, instance:com.fbistech.testcases.LoginPageTest@22eeefeb]" name="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName" duration-ms="17517" started-at="2021-11-06T20:37:58 WAT" finished-at="2021-11-06T20:38:15 WAT">
+        <test-method status="PASS" signature="verifyUserCanClickOnLoginLink()[pri:1, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanClickOnLoginLink" duration-ms="7215" started-at="2021-11-06T23:56:52 WAT" finished-at="2021-11-06T23:56:59 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickOnLoginLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6113" started-at="2021-11-06T23:56:59 WAT" finished-at="2021-11-06T23:57:05 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="14114" started-at="2021-11-06T23:57:05 WAT" finished-at="2021-11-06T23:57:19 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanLoginWith_ValideCredentials()[pri:2, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanLoginWith_ValideCredentials" duration-ms="35715" started-at="2021-11-06T23:57:19 WAT" finished-at="2021-11-06T23:57:55 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanLoginWith_ValideCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6131" started-at="2021-11-06T23:57:55 WAT" finished-at="2021-11-06T23:58:01 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="3971" started-at="2021-11-06T23:58:01 WAT" finished-at="2021-11-06T23:58:05 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_InvalideCredentials()[pri:3, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_InvalideCredentials" duration-ms="16464" started-at="2021-11-06T23:58:05 WAT" finished-at="2021-11-06T23:58:22 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_InvalideCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6112" started-at="2021-11-06T23:58:22 WAT" finished-at="2021-11-06T23:58:28 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="6104" started-at="2021-11-06T23:58:28 WAT" finished-at="2021-11-06T23:58:34 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_ValidEmail_InvalidPassword()[pri:4, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_ValidEmail_InvalidPassword" duration-ms="21292" started-at="2021-11-06T23:58:34 WAT" finished-at="2021-11-06T23:58:55 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_ValidEmail_InvalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6105" started-at="2021-11-06T23:58:55 WAT" finished-at="2021-11-06T23:59:01 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="5288" started-at="2021-11-06T23:59:01 WAT" finished-at="2021-11-06T23:59:07 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_InvalidEmail_ValidPassword()[pri:5, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_InvalidEmail_ValidPassword" duration-ms="19868" started-at="2021-11-06T23:59:07 WAT" finished-at="2021-11-06T23:59:26 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_InvalidEmail_ValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6105" started-at="2021-11-06T23:59:26 WAT" finished-at="2021-11-06T23:59:33 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="3666" started-at="2021-11-06T23:59:33 WAT" finished-at="2021-11-06T23:59:36 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword()[pri:6, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword" duration-ms="19884" started-at="2021-11-06T23:59:36 WAT" finished-at="2021-11-06T23:59:56 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_EmailWithoutDomaName_AndValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6124" started-at="2021-11-06T23:59:56 WAT" finished-at="2021-11-07T00:00:02 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="16836" started-at="2021-11-07T00:00:02 WAT" finished-at="2021-11-07T00:00:19 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword()[pri:7, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_EmptyEmail_AndValidPassword" duration-ms="19810" started-at="2021-11-07T00:00:19 WAT" finished-at="2021-11-07T00:00:39 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_EmptyEmail_AndValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6113" started-at="2021-11-07T00:00:39 WAT" finished-at="2021-11-07T00:00:45 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="16865" started-at="2021-11-07T00:00:45 WAT" finished-at="2021-11-07T00:01:02 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_ValidEmail_EmptyPassword()[pri:8, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_ValidEmail_EmptyPassword" duration-ms="22475" started-at="2021-11-07T00:01:02 WAT" finished-at="2021-11-07T00:01:24 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_ValidEmail_EmptyPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6104" started-at="2021-11-07T00:01:24 WAT" finished-at="2021-11-07T00:01:30 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="5853" started-at="2021-11-07T00:01:30 WAT" finished-at="2021-11-07T00:01:36 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters()[pri:9, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters" duration-ms="16235" started-at="2021-11-07T00:01:36 WAT" finished-at="2021-11-07T00:01:53 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotLoginWith_PasswordLessThan6DigitsCharacters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6112" started-at="2021-11-07T00:01:53 WAT" finished-at="2021-11-07T00:01:59 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="16018" started-at="2021-11-07T00:01:59 WAT" finished-at="2021-11-07T00:02:15 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanClickForgotPasswordLink()[pri:10, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanClickForgotPasswordLink" duration-ms="6239" started-at="2021-11-07T00:02:15 WAT" finished-at="2021-11-07T00:02:21 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickForgotPasswordLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6114" started-at="2021-11-07T00:02:21 WAT" finished-at="2021-11-07T00:02:27 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="3806" started-at="2021-11-07T00:02:27 WAT" finished-at="2021-11-07T00:02:31 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanTerminateForgotPasswordProcess()[pri:11, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanTerminateForgotPasswordProcess" duration-ms="10288" started-at="2021-11-07T00:02:31 WAT" finished-at="2021-11-07T00:02:41 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanTerminateForgotPasswordProcess -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6107" started-at="2021-11-07T00:02:41 WAT" finished-at="2021-11-07T00:02:47 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="14828" started-at="2021-11-07T00:02:47 WAT" finished-at="2021-11-07T00:03:02 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanResetForgetPassword()[pri:12, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanResetForgetPassword" duration-ms="17132" started-at="2021-11-07T00:03:02 WAT" finished-at="2021-11-07T00:03:19 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanResetForgetPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6119" started-at="2021-11-07T00:03:19 WAT" finished-at="2021-11-07T00:03:25 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="15295" started-at="2021-11-07T00:03:25 WAT" finished-at="2021-11-07T00:03:41 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName()[pri:13, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName" duration-ms="26865" started-at="2021-11-07T00:03:41 WAT" finished-at="2021-11-07T00:04:07 WAT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:f8a7:4d18:97e9:8a03%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2789ef781ff2230124cb660f2f6317db
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'Josephs-MacBoo.local', ip: 'fd00:0:0:1:f8a7:4d18:97e9:8a03%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/j4/j04gn4bj1dl...}, goog:chromeOptions: {debuggerAddress: localhost:58570}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2789ef781ff2230124cb660f2f6317db
+*** Element info: {Using=xpath, value=//li[@class='chakra-toast']//div[@id='12']//*[@class='chakra-icon css-onkibi']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.fbistech.pages.LoginPage.validateClickOnCancel_EmailMustBeAValidEmailAddressErrorPromptBtn(LoginPage.java:307)
+at com.fbistech.testcases.LoginPageTest.verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName(LoginPageTest.java:639)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutServerHostName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6112" started-at="2021-11-07T00:04:07 WAT" finished-at="2021-11-07T00:04:14 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="6733" started-at="2021-11-07T00:04:14 WAT" finished-at="2021-11-07T00:04:20 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName()[pri:14, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName" duration-ms="15903" started-at="2021-11-07T00:04:20 WAT" finished-at="2021-11-07T00:04:36 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmailWithoutDomainName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@22eeefeb]" name="tearDown" is-config="true" duration-ms="5130" started-at="2021-11-06T20:38:15 WAT" finished-at="2021-11-06T20:38:20 WAT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6110" started-at="2021-11-07T00:04:36 WAT" finished-at="2021-11-07T00:04:42 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="6725" started-at="2021-11-07T00:04:42 WAT" finished-at="2021-11-07T00:04:49 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCannotResetForgetPasswordWithEmptyInputField()[pri:15, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCannotResetForgetPasswordWithEmptyInputField" duration-ms="17084" started-at="2021-11-07T00:04:49 WAT" finished-at="2021-11-07T00:05:06 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCannotResetForgetPasswordWithEmptyInputField -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6116" started-at="2021-11-07T00:05:06 WAT" finished-at="2021-11-07T00:05:12 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="4924" started-at="2021-11-07T00:05:12 WAT" finished-at="2021-11-07T00:05:17 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanNavigateToTermsAndConditionsPage()[pri:16, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanNavigateToTermsAndConditionsPage" duration-ms="4715" started-at="2021-11-07T00:05:17 WAT" finished-at="2021-11-07T00:05:22 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanNavigateToTermsAndConditionsPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6112" started-at="2021-11-07T00:05:22 WAT" finished-at="2021-11-07T00:05:28 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="setUp" is-config="true" duration-ms="11088" started-at="2021-11-07T00:05:28 WAT" finished-at="2021-11-07T00:05:39 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanClickOnTermsAndConditionsLink()[pri:17, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="verifyUserCanClickOnTermsAndConditionsLink" duration-ms="5028" started-at="2021-11-07T00:05:39 WAT" finished-at="2021-11-07T00:05:44 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanClickOnTermsAndConditionsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fbistech.testcases.LoginPageTest@78ac1102]" name="tearDown" is-config="true" duration-ms="6104" started-at="2021-11-07T00:05:44 WAT" finished-at="2021-11-07T00:05:50 WAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
