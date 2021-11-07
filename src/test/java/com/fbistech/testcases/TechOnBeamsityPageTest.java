@@ -617,25 +617,7 @@ public class TechOnBeamsityPageTest extends TestBase {
 
 	
 	
-	
-	
 
-	
-	
-	
-	
-
-//	@JiraPolicy(logTicketReady=true)
-//	@Test(priority = 3) 
-//	public void verifyUserCanFillSponsorForm() throws Exception
-//	{
-//		sponsors_OrganizationPage = homePage.validateClickOnSponsors_OrganizationLink();
-//		Thread.sleep(3000);
-//		schools_OrganizationsPage = schools_OrganizationsPage.clickOnSponsor_OrganizationForm();
-//		homePage = schools_OrganizationsPage.createNewSchool(prop.getProperty("school_OrganizationName"),prop.getProperty("firstName"), 
-//				prop.getProperty("lastName"), prop.getProperty("emailAddress"), prop.getProperty("phoneNo"));
-//	}
-//	
 	
 	
 
